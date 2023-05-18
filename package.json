@@ -9,7 +9,7 @@
   "devDependencies": {},
   "scripts": {
     "copy-html": "copy src\\index.html dist\\index.html",
-    "build": "tailwindcss build src/input.css -o dist/output.css",
+    "build": "tailwindcss build -i src/input.css -o dist/output.css --minify",
     "start": "npm run copy-html && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
