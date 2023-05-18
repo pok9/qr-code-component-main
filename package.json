@@ -8,8 +8,9 @@
   },
   "devDependencies": {},
   "scripts": {
-    "copy-html": "cp src/index.html dist/index.html",
+    "copy-html": "copy src\\index.html dist\\index.html",
     "build": "tailwindcss build src/input.css -o dist/output.css",
+    "start": "npm run copy-html && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
